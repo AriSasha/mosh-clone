@@ -1,8 +1,8 @@
-# Campus Service Portal
+# Campus-Service-Portal-Frontend clone
 
-This project is a recreation of the Campus Service Portal using Laravel.
+This project is a recreation of a portal for purposes of practicing and getting a better understanding of Laravel.
 
-The project was completed as part of the Advanced Web Application Development assignment. The provided `campus-service-portal-frontend` repository and the assigned Laravel development videos were used as the main resources for recreating the system.
+It was completed as an Advanced Web Application Development assignment. The provided `campus-service-portal-frontend` repository and a set of assigned Laravel development videos were used as the main resources for recreating the system.
 
 ## What Was Done
 
