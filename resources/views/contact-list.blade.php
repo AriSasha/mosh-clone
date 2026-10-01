@@ -24,6 +24,7 @@
                 <div class="overflow-x-auto">
                     <table class="w-full min-w-[860px]">
                         <thead>
+                            
                             <tr class="border-b border-slate-200 bg-slate-50">
                                 <th class="py-3 px-4 text-left text-sm font-semibold text-slate-500">Name</th>
                                 <th class="py-3 px-4 text-left text-sm font-semibold text-slate-500">Email</th>
@@ -31,12 +32,14 @@
                                 <th class="py-3 px-4 text-left text-sm font-semibold text-slate-500">Message</th>
                                 <th class="py-3 px-4 text-center text-sm font-semibold text-slate-500">Actions</th>
                             </tr>
+                            
                         </thead>
                         <tbody>
+                            @foreach ($contacts as $contact)
                             <tr class="hover:bg-slate-50">
-                                <td class="py-3 px-4 text-sm font-medium">Aisha Namuli</td>
-                                <td class="py-3 px-4 text-sm text-slate-500">aisha.namuli@campus.ac.ug</td>
-                                <td class="py-3 px-4"><span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-[#2563eb]">Estates</span></td>
+                                <td class="py-3 px-4 text-sm font-medium">{{$contact->full_name}}</td>
+                                <td class="py-3 px-4 text-sm text-slate-500">{{$contact->email}}</td>
+                                <td class="py-3 px-4"><span class="text-xs px-2 py-1 rounded-full bg-blue-50 text-[#2563eb]">{{$contact->department}}</span></td>
                                 <td class="py-3 px-4 text-sm text-slate-500 max-w-xs">The light in Hostel C, corridor 2, has been out since Monday.</td>
                                 <td class="py-3 px-4">
                                     <div class="flex items-center justify-center gap-2">
@@ -55,6 +58,7 @@
                                     </div>
                                 </td>
                             </tr>
+                            @endforeach
                         </tbody>
                     </table>
                 </div>

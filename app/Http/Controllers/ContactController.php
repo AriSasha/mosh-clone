@@ -12,12 +12,13 @@ class ContactController extends Controller
      */
     public function contactList()
     {
-        return('contact-list');
+         $contacts = Contact::all();
+        return view ('contact-list', compact('contacts'));
     }
 
     public function contact()
     {
-        return('contact');
+       return view('contact');
     }
 
     /**
